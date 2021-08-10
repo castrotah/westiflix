@@ -1,0 +1,116 @@
+:root {
+    --preto: rgb(19, 21, 22);
+    --vermelho: rgb(203, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(205, 212, 206);
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Filme Principal */
+.filme_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)100%), url('img/capa_the_maginificent_seven.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.filme_principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(19, 21, 22);
+
+    padding:15px 30px;
+    border-radius: 3%;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Verdana Black', Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: rgba(255, 255, 255,0.7);
+    color: rgb(19, 21, 22);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme_principal .container{
+    width: 60%;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel_filmes {
+    margin-top: 2px;
+}
+
+.titulo_categoria {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
